@@ -9,6 +9,5 @@ terraform {
 
 provider "aws" {
   region  = "us-east-1"
-  profile = "fractalemma"
-  // profile = "practice-tf"
+  profile = "practice-tf"
 }
