@@ -57,7 +57,7 @@ resource "aws_security_group" "jro-sg" {
     from_port   = 0
     to_port     = 0
     protocol    = "-1"
-    cidr_blocks = ["187.145.53.149/32"]
+    cidr_blocks = ["187.145.53.149/32"] // Obtained by running: curl -4 -s ifconfig.me
   }
   // Allow all outbound traffic
   egress {

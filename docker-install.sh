@@ -45,4 +45,3 @@ sleep 1
 echo "Wait for a few seconds"
 sleep 2
 echo "Once finished, run 'docker ps' again"
-
