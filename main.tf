@@ -73,7 +73,7 @@ resource "aws_security_group" "jro-sg" {
 }
 
 // ================================================================
-// Compute
+// Cloud Compute (EC2)
 // ================================================================
 
 resource "aws_key_pair" "jro-key-pair" {

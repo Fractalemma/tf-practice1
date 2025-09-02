@@ -5,9 +5,14 @@ terraform {
       version = "~> 6.0"
     }
   }
+  
+  backend "s3" {
+    # Backend configuration will be provided via backend.hcl file
+    # Use: terraform init -backend-config="backend.hcl"
+  }
 }
 
 provider "aws" {
-  region  = "us-east-1"
-  profile = "practice-tf"
+  region  = var.region
+  profile = var.aws_profile
 }
